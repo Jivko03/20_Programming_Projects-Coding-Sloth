@@ -1,0 +1,32 @@
+.main-page{
+    padding: 100px 0;
+  border: 3px solid green;
+  border-radius: 3%;
+  text-align: center;
+}
+.intro{
+    padding: 10% 5%;
+  border: 3px solid green;
+  border-radius: 3%;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+.experience{
+    padding: 10% 5%;
+  border: 3px solid green;
+  border-radius: 3%;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+.projects{
+    padding: 10% 5%;
+  border: 3px solid green;
+  border-radius: 3%;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+}
+.mainpic {
+    border-radius: 8%;
+    width: 30%;
+    height: 30%;
+}
