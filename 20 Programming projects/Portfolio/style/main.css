@@ -1,32 +1,227 @@
+body{
+  background: #121212;
+  min-height: 100vh;
+  align-content: center;
+}
 .main-page{
     padding: 100px 0;
-  border: 3px solid green;
-  border-radius: 3%;
   text-align: center;
+  color: #FFEDD2;
+  z-index: -1;
 }
+
+#bigtext{
+  font-size: 5em;
+  padding: 10% 20% 20% 20%;
+  animation: 5s fadein infinite linear alternate;
+  font-family: "Lucida Console", "Courier New", monospace;
+  border-color: white;
+  border-radius: 10px;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0.2;
+    color: red;
+  }
+  to{
+    opacity: 1;
+    color: green;
+  }
+  to{
+    opacity: 1;
+    color:blue;
+  }
+}
+
 .intro{
-    padding: 10% 5%;
-  border: 3px solid green;
-  border-radius: 3%;
+  margin: 20% auto;
+  padding: 2em;
+  width: 80%;
+  height: 80%;
+  background: #252525;
   text-align: center;
-  margin: 5% 5% 5% 5%;
+  font-size: 2em;
+  border-radius: 10px;
+  position: relative;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 1deg;
+  inherits: false;
+}
+.intro::after, .intro::before{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  background-image: conic-gradient(from var(--angle),black, red);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.intro::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 .experience{
-    padding: 10% 5%;
-  border: 3px solid green;
-  border-radius: 3%;
+ margin: 20% auto;
+  padding: 2em;
+  width: 80%;
+  height: 80%;
+  font-size: 2em;
+  background: #252525;
   text-align: center;
-  margin: 5% 5% 5% 5%;
+  border-radius: 10px;
+  position: relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 1deg;
+  inherits: false;
+}
+.experience::after, .experience::before{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  background-image: conic-gradient(from var(--angle),black, rgb(0, 255, 85));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.experience::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 .projects{
-    padding: 10% 5%;
-  border: 3px solid green;
-  border-radius: 3%;
+  margin: 20% auto;
+  padding: 2em;
+  width: 80%;
+  height: 80%;
+  font-size: 2em;
+  background: #252525;
   text-align: center;
-  margin: 5% 5% 5% 5%;
+  border-radius: 10px;
+  position: relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 1deg;
+  inherits: false;
+}
+.projects::after, .projects::before{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  background-image: conic-gradient(from var(--angle),black, rgb(38, 243, 250));
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.intro::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
 .mainpic {
     border-radius: 8%;
     width: 30%;
-    height: 30%;
+    height: 20%;
+    background-color: red;
+    position: relative;
+    border-style: solid;
+    animation: swag 5s linear 2s infinite alternate;
+}
+@keyframes swag {
+  0%   {border-color:rgb(255, 123, 0); left:0px; top:0px; border-width: 20px;}
+  25%  {border-color:rgb(0, 250, 83); left:200px; top:0px; border-width: 0px;}
+  50%  {border-color: rgb(1, 253, 241); left:-200px; top:0px; border-width: 20px;}
+  100% {border-color:rgb(255, 166, 0); left:0px; top:0px; border-width: 0px;}
+}
+.secpic {
+    border-radius: 40%;
+    width: 30%;
+    height: 20%;
+    background-color: green;
+    position: relative;
+    animation: shake 5s linear infinite alternate;
+}
+@keyframes shake {
+  0%   {transform: rotate(45deg);}
+  25%  {transform: rotate(-25deg);}
+  50%  {transform: rotate(45deg);}
+  75%  {transform: rotate(-25deg);}
+  100% {transform: rotate(0deg);}
+}
+.lastpic {
+    border-radius: 10%;
+    width: 30%;
+    height: 20%;
+    background-color: green;
+    position: relative;
+    animation: boo 10s linear infinite;
+}
+@keyframes boo {
+  0%   {width: 0%;height: 0%;}
+  25%  {width: 10%;height: 5%;}
+  50%  {width: 30%;height: 20%;}
+  75%  {width: 50%;height: 30%;}
+  100% {width: 0%;height: 0%;}
+}
+.supr{
+  opacity: 0;
+  position: relative;
+  animation: scary 10s linear infinite;
+}
+@keyframes scary {
+  
+  from{
+    opacity: 0;
+
+  }
+  to{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 1;
+  }
+
 }
