@@ -98,7 +98,7 @@ body{
   position: absolute;
   height: 101%;
   width: 101%;
-  background-image: conic-gradient(from var(--angle),black, rgb(0, 255, 85));
+  background-image: conic-gradient(from var(--angle),white, rgb(0, 255, 85));
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -116,7 +116,7 @@ body{
     --angle: 0deg;
   }
   to{
-    --angle: 360deg;
+    --angle: -360deg;
   }
 }
 .projects{
@@ -140,7 +140,7 @@ body{
   position: absolute;
   height: 101%;
   width: 101%;
-  background-image: conic-gradient(from var(--angle),black, rgb(38, 243, 250));
+  background-image: conic-gradient(from var(--angle),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250),black, rgb(38, 243, 250));
   top: 50%;
   left: 50%;
   translate: -50% -50%;
