@@ -1,0 +1,13 @@
+What is git explained in the way that I understood it from their website: https://git-scm.com/book/bg/v2/%d0%9d%d0%b0%d1%87%d0%b0%d0%bb%d0%be-%d0%9a%d0%b0%d0%ba%d0%b2%d0%be-%d0%b5-Git
+
+1. Git is a VCS or Version Control System
+2. Git is different from other VCSs due to the fact that most of the process happens locally.
+3. Git has 3 different states when working on a file, namely: modified, staged(indexed) and committed.
+4. Modified - means that there are differences in the current version of the file as compared to the one indexed in the git repository
+5. Staged - this is the stage where you tell git or index to git the files where you'll be have made changes and these indexes are stored in the git directory waiting for a commit.
+6. Committed - this is the stage where all the changes that have been indexed in the staged(indexed) are now being snapshotted.
+7. What is a snapshot? - Put simply snapshot is an image of how the files look like while also referencing the image.
+8. Hashing - another important thing to point out is that instead of files in the Git file being addressed with their name as it is in the directory they are saved as hash algorithm.
+9. But what is this algorithm? - to be exact the algorithm used is SHA-1 and what this does is generate a 40 symbol string consisting of the numbers from 0-9 and the letters a-f. And it address the current files as well as the structure of the files.
+10. Why is this important or noteworthy? - At its core it is generated every time a commit is made meaning that you simply are incapable of making a change without git knowing about it and in turn you not finding out.
+11. Convenience? - one of the biggest players here are the part where all of gits wizardry is that it can all run even when you have no internet or remote connection through service such as VPN(Virtual Private Network). Why does this matter? Because your workflow for the most part won't be impacted due to inability to save your progress and you'll only have to worry how to google your problems and its also worth mentioning that being offline allows for quick comparison between edits and that can be live saver in times of need.

@@ -1,0 +1,4 @@
+1. Find out what is the structure of git.
+2. Find resources as to how to even begin recreating git.
+3. Make step by step plant to creating a working version of git.
+4. Number 4.
