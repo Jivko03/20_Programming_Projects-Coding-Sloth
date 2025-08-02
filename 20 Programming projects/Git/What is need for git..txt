@@ -1,0 +1,7 @@
+What is need for git.
+
+1. implement snapshots - different versions of the code base.
+
+How will the basic basic version look like:
+
+you have your regular commands and ways to save but its very simplistic.
