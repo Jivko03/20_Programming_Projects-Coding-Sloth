@@ -1,0 +1,8 @@
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\obj\Debug\GIt - basic version.csproj.AssemblyReference.cache
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\obj\Debug\GIt - basic version.csproj.CoreCompileInputs.cache
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\bin\Debug\GIt - basic version.exe.config
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\bin\Debug\GIt - basic version.exe
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\bin\Debug\GIt - basic version.pdb
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\obj\Debug\GIt - basic version.exe
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\obj\Debug\GIt - basic version.pdb
+C:\Users\Tamuring\Desktop\20 Programming projects\Git\Git code\GIt - basic version\obj\Debug\GIt - basic version.exe.config
